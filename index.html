@@ -1,810 +1,810 @@
 <!doctype html>
 <html lang="es">
+
 <head>
-<meta charset="utf-8">
-<title>Cuentos para pensar</title>
-<meta name="author" content="Edwin">
-<meta name="generator" content="WYSIWYG Web Builder 18 - https://www.wysiwygwebbuilder.com">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link href="font-awesome.min.css" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css?family=Akaya+Kanadaka&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css?family=Fredericka+the+Great&display=swap" rel="stylesheet">
-<link href="cuentos.css" rel="stylesheet">
-<link href="index.css" rel="stylesheet">
-<script src="jquery-3.7.0.min.js"></script>
-<script src="jquery.2dtransform.js"></script>
-<script src="jquery-ui.min.js"></script>
-<script src="jquery.ui.effect-bars.min.js"></script>
-<script src="jquery.ui.effect-blast.min.js"></script>
-<script src="jquery.ui.effect-squares.min.js"></script>
-<script src="wb.slideshow.min.js"></script>
-<script src="wb.stickylayer.min.js"></script>
-<script src="wwb18.min.js"></script>
-<script>
-$(document).ready(function()
-{
-   $('#wb_Text2').addClass('visibility-hidden');
-   $('#wb_Text1').addClass('visibility-hidden');
-   $('#wb_Text4').addClass('visibility-hidden');
-   $('#wb_Text8').addClass('visibility-hidden');
-   $('#wb_Text10').addClass('visibility-hidden');
-   $('#wb_Text12').addClass('visibility-hidden');
-   $('#wb_Text14').addClass('visibility-hidden');
-   $('#wb_Text16').addClass('visibility-hidden');
-   $('#wb_Text18').addClass('visibility-hidden');
-   $('#wb_Text20').addClass('visibility-hidden');
-   $("#SlideShow1").slideshow(
-   {
-      interval: 4000,
-      type: 'sequence',
-      effect: 'random',
-      direction: '',
-      count: 8,
-      pagination: false,
-      fullscreen: 0,
-      maxWidth: 1920,
-      effectlength: 2000
-   });
-   $("#SlideShow1_back a").click(function()
-   {
-      $('#SlideShow1').slideshow('previmage');
-   });
-   $("#SlideShow1_next a").click(function()
-   {
-      $('#SlideShow1').slideshow('nextimage');
-   });
-   $("#Layer1").stickylayer({orientation: 4, position: [0, 0], delay: 100});
-   function onScrollText2()
-   {
-      var $obj = $("#wb_Text2");
-      if (!$obj.hasClass("in-viewport") && $obj.inViewPort(false))
-      {
-         $obj.addClass("in-viewport");
-         AnimateCss('wb_Text2', 'animate-fade-in-right', 0, 500);
-      }
-      else
-      if ($obj.hasClass("in-viewport") && !$obj.inViewPort(true))
-      {
-         $obj.removeClass("in-viewport");
-         AnimateCss('wb_Text2', 'animate-fade-out', 0, 500);
-      }
-   }
-   if (!$('#wb_Text2').inViewPort(true))
-   {
-      $('#wb_Text2').addClass("in-viewport");
-   }
-   onScrollText2();
-   $(window).scroll(function(event)
-   {
-      onScrollText2();
-   });
-   function onScrollText1()
-   {
-      var $obj = $("#wb_Text1");
-      if (!$obj.hasClass("in-viewport") && $obj.inViewPort(false))
-      {
-         $obj.addClass("in-viewport");
-         AnimateCss('wb_Text1', 'animate-fade-in-left', 0, 500);
-      }
-      else
-      if ($obj.hasClass("in-viewport") && !$obj.inViewPort(true))
-      {
-         $obj.removeClass("in-viewport");
-         AnimateCss('wb_Text1', 'animate-fade-out', 0, 500);
-      }
-   }
-   if (!$('#wb_Text1').inViewPort(true))
-   {
-      $('#wb_Text1').addClass("in-viewport");
-   }
-   onScrollText1();
-   $(window).scroll(function(event)
-   {
-      onScrollText1();
-   });
-   function onScrollText4()
-   {
-      var $obj = $("#wb_Text4");
-      if (!$obj.hasClass("in-viewport") && $obj.inViewPort(false))
-      {
-         $obj.addClass("in-viewport");
-         AnimateCss('wb_Text4', 'fall', 0, 1500);
-      }
-      else
-      if ($obj.hasClass("in-viewport") && !$obj.inViewPort(true))
-      {
-         $obj.removeClass("in-viewport");
-         AnimateCss('wb_Text4', 'animate-fade-out', 0, 500);
-      }
-   }
-   if (!$('#wb_Text4').inViewPort(true))
-   {
-      $('#wb_Text4').addClass("in-viewport");
-   }
-   onScrollText4();
-   $(window).scroll(function(event)
-   {
-      onScrollText4();
-   });
-   function onScrollText8()
-   {
-      var $obj = $("#wb_Text8");
-      if (!$obj.hasClass("in-viewport") && $obj.inViewPort(false))
-      {
-         $obj.addClass("in-viewport");
-         AnimateCss('wb_Text8', 'fall', 0, 1500);
-      }
-      else
-      if ($obj.hasClass("in-viewport") && !$obj.inViewPort(true))
-      {
-         $obj.removeClass("in-viewport");
-         AnimateCss('wb_Text8', 'animate-fade-out', 0, 500);
-      }
-   }
-   if (!$('#wb_Text8').inViewPort(true))
-   {
-      $('#wb_Text8').addClass("in-viewport");
-   }
-   onScrollText8();
-   $(window).scroll(function(event)
-   {
-      onScrollText8();
-   });
-   function onScrollText10()
-   {
-      var $obj = $("#wb_Text10");
-      if (!$obj.hasClass("in-viewport") && $obj.inViewPort(false))
-      {
-         $obj.addClass("in-viewport");
-         AnimateCss('wb_Text10', 'fall', 0, 1500);
-      }
-      else
-      if ($obj.hasClass("in-viewport") && !$obj.inViewPort(true))
-      {
-         $obj.removeClass("in-viewport");
-         AnimateCss('wb_Text10', 'animate-fade-out', 0, 500);
-      }
-   }
-   if (!$('#wb_Text10').inViewPort(true))
-   {
-      $('#wb_Text10').addClass("in-viewport");
-   }
-   onScrollText10();
-   $(window).scroll(function(event)
-   {
-      onScrollText10();
-   });
-   function onScrollText12()
-   {
-      var $obj = $("#wb_Text12");
-      if (!$obj.hasClass("in-viewport") && $obj.inViewPort(false))
-      {
-         $obj.addClass("in-viewport");
-         AnimateCss('wb_Text12', 'fall', 0, 1500);
-      }
-      else
-      if ($obj.hasClass("in-viewport") && !$obj.inViewPort(true))
-      {
-         $obj.removeClass("in-viewport");
-         AnimateCss('wb_Text12', 'animate-fade-out', 0, 500);
-      }
-   }
-   if (!$('#wb_Text12').inViewPort(true))
-   {
-      $('#wb_Text12').addClass("in-viewport");
-   }
-   onScrollText12();
-   $(window).scroll(function(event)
-   {
-      onScrollText12();
-   });
-   function onScrollText14()
-   {
-      var $obj = $("#wb_Text14");
-      if (!$obj.hasClass("in-viewport") && $obj.inViewPort(false))
-      {
-         $obj.addClass("in-viewport");
-         AnimateCss('wb_Text14', 'fall', 0, 1500);
-      }
-      else
-      if ($obj.hasClass("in-viewport") && !$obj.inViewPort(true))
-      {
-         $obj.removeClass("in-viewport");
-         AnimateCss('wb_Text14', 'animate-fade-out', 0, 500);
-      }
-   }
-   if (!$('#wb_Text14').inViewPort(true))
-   {
-      $('#wb_Text14').addClass("in-viewport");
-   }
-   onScrollText14();
-   $(window).scroll(function(event)
-   {
-      onScrollText14();
-   });
-   function onScrollText16()
-   {
-      var $obj = $("#wb_Text16");
-      if (!$obj.hasClass("in-viewport") && $obj.inViewPort(false))
-      {
-         $obj.addClass("in-viewport");
-         AnimateCss('wb_Text16', 'fall', 0, 1500);
-      }
-      else
-      if ($obj.hasClass("in-viewport") && !$obj.inViewPort(true))
-      {
-         $obj.removeClass("in-viewport");
-         AnimateCss('wb_Text16', 'animate-fade-out', 0, 500);
-      }
-   }
-   if (!$('#wb_Text16').inViewPort(true))
-   {
-      $('#wb_Text16').addClass("in-viewport");
-   }
-   onScrollText16();
-   $(window).scroll(function(event)
-   {
-      onScrollText16();
-   });
-   function onScrollText18()
-   {
-      var $obj = $("#wb_Text18");
-      if (!$obj.hasClass("in-viewport") && $obj.inViewPort(false))
-      {
-         $obj.addClass("in-viewport");
-         AnimateCss('wb_Text18', 'fall', 0, 1500);
-      }
-      else
-      if ($obj.hasClass("in-viewport") && !$obj.inViewPort(true))
-      {
-         $obj.removeClass("in-viewport");
-         AnimateCss('wb_Text18', 'animate-fade-out', 0, 500);
-      }
-   }
-   if (!$('#wb_Text18').inViewPort(true))
-   {
-      $('#wb_Text18').addClass("in-viewport");
-   }
-   onScrollText18();
-   $(window).scroll(function(event)
-   {
-      onScrollText18();
-   });
-   function onScrollText20()
-   {
-      var $obj = $("#wb_Text20");
-      if (!$obj.hasClass("in-viewport") && $obj.inViewPort(false))
-      {
-         $obj.addClass("in-viewport");
-         AnimateCss('wb_Text20', 'fall', 0, 1500);
-      }
-      else
-      if ($obj.hasClass("in-viewport") && !$obj.inViewPort(true))
-      {
-         $obj.removeClass("in-viewport");
-         AnimateCss('wb_Text20', 'animate-fade-out', 0, 500);
-      }
-   }
-   if (!$('#wb_Text20').inViewPort(true))
-   {
-      $('#wb_Text20').addClass("in-viewport");
-   }
-   onScrollText20();
-   $(window).scroll(function(event)
-   {
-      onScrollText20();
-   });
-});
-</script>
+    <meta charset="utf-8">
+    <title>Ocho cuentos para pensar</title>
+    <meta name="author" content="Edwin">
+    <meta name="generator" content="WYSIWYG Web Builder 18 - https://www.wysiwygwebbuilder.com">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="font-awesome.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Akaya+Kanadaka&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Fredericka+the+Great&display=swap" rel="stylesheet">
+    <link href="cuentos.css" rel="stylesheet">
+    <link href="index.css" rel="stylesheet">
+    <script src="jquery-3.7.0.min.js"></script>
+    <script src="jquery.2dtransform.js"></script>
+    <script src="jquery-ui.min.js"></script>
+    <script src="jquery.ui.effect-bars.min.js"></script>
+    <script src="jquery.ui.effect-blast.min.js"></script>
+    <script src="jquery.ui.effect-squares.min.js"></script>
+    <script src="wb.slideshow.min.js"></script>
+    <script src="wb.stickylayer.min.js"></script>
+    <script src="wwb18.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('#wb_Text2').addClass('visibility-hidden');
+            $('#wb_Text1').addClass('visibility-hidden');
+            $('#wb_Text4').addClass('visibility-hidden');
+            $('#wb_Text8').addClass('visibility-hidden');
+            $('#wb_Text10').addClass('visibility-hidden');
+            $('#wb_Text12').addClass('visibility-hidden');
+            $('#wb_Text14').addClass('visibility-hidden');
+            $('#wb_Text16').addClass('visibility-hidden');
+            $('#wb_Text18').addClass('visibility-hidden');
+            $('#wb_Text20').addClass('visibility-hidden');
+            $("#SlideShow1").slideshow({
+                interval: 4000,
+                type: 'sequence',
+                effect: 'random',
+                direction: '',
+                count: 8,
+                pagination: false,
+                fullscreen: 0,
+                maxWidth: 1920,
+                effectlength: 2000
+            });
+            $("#SlideShow1_back a").click(function() {
+                $('#SlideShow1').slideshow('previmage');
+            });
+            $("#SlideShow1_next a").click(function() {
+                $('#SlideShow1').slideshow('nextimage');
+            });
+            $("#Layer1").stickylayer({
+                orientation: 4,
+                position: [0, 0],
+                delay: 100
+            });
+
+            function onScrollText2() {
+                var $obj = $("#wb_Text2");
+                if (!$obj.hasClass("in-viewport") && $obj.inViewPort(false)) {
+                    $obj.addClass("in-viewport");
+                    AnimateCss('wb_Text2', 'animate-fade-in-right', 0, 500);
+                } else
+                if ($obj.hasClass("in-viewport") && !$obj.inViewPort(true)) {
+                    $obj.removeClass("in-viewport");
+                    AnimateCss('wb_Text2', 'animate-fade-out', 0, 500);
+                }
+            }
+            if (!$('#wb_Text2').inViewPort(true)) {
+                $('#wb_Text2').addClass("in-viewport");
+            }
+            onScrollText2();
+            $(window).scroll(function(event) {
+                onScrollText2();
+            });
+
+            function onScrollText1() {
+                var $obj = $("#wb_Text1");
+                if (!$obj.hasClass("in-viewport") && $obj.inViewPort(false)) {
+                    $obj.addClass("in-viewport");
+                    AnimateCss('wb_Text1', 'animate-fade-in-left', 0, 500);
+                } else
+                if ($obj.hasClass("in-viewport") && !$obj.inViewPort(true)) {
+                    $obj.removeClass("in-viewport");
+                    AnimateCss('wb_Text1', 'animate-fade-out', 0, 500);
+                }
+            }
+            if (!$('#wb_Text1').inViewPort(true)) {
+                $('#wb_Text1').addClass("in-viewport");
+            }
+            onScrollText1();
+            $(window).scroll(function(event) {
+                onScrollText1();
+            });
+
+            function onScrollText4() {
+                var $obj = $("#wb_Text4");
+                if (!$obj.hasClass("in-viewport") && $obj.inViewPort(false)) {
+                    $obj.addClass("in-viewport");
+                    AnimateCss('wb_Text4', 'fall', 0, 1500);
+                } else
+                if ($obj.hasClass("in-viewport") && !$obj.inViewPort(true)) {
+                    $obj.removeClass("in-viewport");
+                    AnimateCss('wb_Text4', 'animate-fade-out', 0, 500);
+                }
+            }
+            if (!$('#wb_Text4').inViewPort(true)) {
+                $('#wb_Text4').addClass("in-viewport");
+            }
+            onScrollText4();
+            $(window).scroll(function(event) {
+                onScrollText4();
+            });
+
+            function onScrollText8() {
+                var $obj = $("#wb_Text8");
+                if (!$obj.hasClass("in-viewport") && $obj.inViewPort(false)) {
+                    $obj.addClass("in-viewport");
+                    AnimateCss('wb_Text8', 'fall', 0, 1500);
+                } else
+                if ($obj.hasClass("in-viewport") && !$obj.inViewPort(true)) {
+                    $obj.removeClass("in-viewport");
+                    AnimateCss('wb_Text8', 'animate-fade-out', 0, 500);
+                }
+            }
+            if (!$('#wb_Text8').inViewPort(true)) {
+                $('#wb_Text8').addClass("in-viewport");
+            }
+            onScrollText8();
+            $(window).scroll(function(event) {
+                onScrollText8();
+            });
+
+            function onScrollText10() {
+                var $obj = $("#wb_Text10");
+                if (!$obj.hasClass("in-viewport") && $obj.inViewPort(false)) {
+                    $obj.addClass("in-viewport");
+                    AnimateCss('wb_Text10', 'fall', 0, 1500);
+                } else
+                if ($obj.hasClass("in-viewport") && !$obj.inViewPort(true)) {
+                    $obj.removeClass("in-viewport");
+                    AnimateCss('wb_Text10', 'animate-fade-out', 0, 500);
+                }
+            }
+            if (!$('#wb_Text10').inViewPort(true)) {
+                $('#wb_Text10').addClass("in-viewport");
+            }
+            onScrollText10();
+            $(window).scroll(function(event) {
+                onScrollText10();
+            });
+
+            function onScrollText12() {
+                var $obj = $("#wb_Text12");
+                if (!$obj.hasClass("in-viewport") && $obj.inViewPort(false)) {
+                    $obj.addClass("in-viewport");
+                    AnimateCss('wb_Text12', 'fall', 0, 1500);
+                } else
+                if ($obj.hasClass("in-viewport") && !$obj.inViewPort(true)) {
+                    $obj.removeClass("in-viewport");
+                    AnimateCss('wb_Text12', 'animate-fade-out', 0, 500);
+                }
+            }
+            if (!$('#wb_Text12').inViewPort(true)) {
+                $('#wb_Text12').addClass("in-viewport");
+            }
+            onScrollText12();
+            $(window).scroll(function(event) {
+                onScrollText12();
+            });
+
+            function onScrollText14() {
+                var $obj = $("#wb_Text14");
+                if (!$obj.hasClass("in-viewport") && $obj.inViewPort(false)) {
+                    $obj.addClass("in-viewport");
+                    AnimateCss('wb_Text14', 'fall', 0, 1500);
+                } else
+                if ($obj.hasClass("in-viewport") && !$obj.inViewPort(true)) {
+                    $obj.removeClass("in-viewport");
+                    AnimateCss('wb_Text14', 'animate-fade-out', 0, 500);
+                }
+            }
+            if (!$('#wb_Text14').inViewPort(true)) {
+                $('#wb_Text14').addClass("in-viewport");
+            }
+            onScrollText14();
+            $(window).scroll(function(event) {
+                onScrollText14();
+            });
+
+            function onScrollText16() {
+                var $obj = $("#wb_Text16");
+                if (!$obj.hasClass("in-viewport") && $obj.inViewPort(false)) {
+                    $obj.addClass("in-viewport");
+                    AnimateCss('wb_Text16', 'fall', 0, 1500);
+                } else
+                if ($obj.hasClass("in-viewport") && !$obj.inViewPort(true)) {
+                    $obj.removeClass("in-viewport");
+                    AnimateCss('wb_Text16', 'animate-fade-out', 0, 500);
+                }
+            }
+            if (!$('#wb_Text16').inViewPort(true)) {
+                $('#wb_Text16').addClass("in-viewport");
+            }
+            onScrollText16();
+            $(window).scroll(function(event) {
+                onScrollText16();
+            });
+
+            function onScrollText18() {
+                var $obj = $("#wb_Text18");
+                if (!$obj.hasClass("in-viewport") && $obj.inViewPort(false)) {
+                    $obj.addClass("in-viewport");
+                    AnimateCss('wb_Text18', 'fall', 0, 1500);
+                } else
+                if ($obj.hasClass("in-viewport") && !$obj.inViewPort(true)) {
+                    $obj.removeClass("in-viewport");
+                    AnimateCss('wb_Text18', 'animate-fade-out', 0, 500);
+                }
+            }
+            if (!$('#wb_Text18').inViewPort(true)) {
+                $('#wb_Text18').addClass("in-viewport");
+            }
+            onScrollText18();
+            $(window).scroll(function(event) {
+                onScrollText18();
+            });
+
+            function onScrollText20() {
+                var $obj = $("#wb_Text20");
+                if (!$obj.hasClass("in-viewport") && $obj.inViewPort(false)) {
+                    $obj.addClass("in-viewport");
+                    AnimateCss('wb_Text20', 'fall', 0, 1500);
+                } else
+                if ($obj.hasClass("in-viewport") && !$obj.inViewPort(true)) {
+                    $obj.removeClass("in-viewport");
+                    AnimateCss('wb_Text20', 'animate-fade-out', 0, 500);
+                }
+            }
+            if (!$('#wb_Text20').inViewPort(true)) {
+                $('#wb_Text20').addClass("in-viewport");
+            }
+            onScrollText20();
+            $(window).scroll(function(event) {
+                onScrollText20();
+            });
+        });
+    </script>
 </head>
+
 <body>
-<div id="container">
-</div>
-<div id="wb_LayoutGrid2">
-<div id="LayoutGrid2-divider-top">
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 230" preserveAspectRatio="none">
+    <div id="container">
+    </div>
+    <div id="wb_LayoutGrid2">
+        <div id="LayoutGrid2-divider-top">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 230" preserveAspectRatio="none">
 <path class="divider-fill" style="opacity:0.3" d="M 505.29,47.51947 C 346.07,47.51947 235.61,230.3 0,230.3 V 0.3 h 508 z" />
 <path class="divider-fill" style="opacity:0.4" d="M 485.29,47.44 C 326.07,47.44 235.61,214.36 0,214.36 V 0.2 h 485.29 z" />
 <path class="divider-fill" style="opacity:0.5" d="m 485.29,48.46999 q -9.42,-0.31 -20,-0.32 c -159.22,0 -229.68,151 -465.29,151 v -198.24 h 485.29 z" />
 <path class="divider-fill" d="M 0,182 V -0.27 H 1000 V 24.4 C 787.4,24.4 781,99.85 702.92,99.85 645,99.85 632.92,46.97 445.29,46.97 286.07,46.97 235.61,182 0,182 Z" />
 </svg></div>
-<div id="LayoutGrid2">
-<div class="col-1">
-<div id="wb_Text1">
-<p>CUENTOS </p>
-</div>
-</div>
-<div class="col-2">
-<div id="wb_Text2">
-<p>PARA PENSAR</p>
-</div>
-</div>
-</div>
-</div>
-<div id="wb_LayoutGrid8">
-<div id="LayoutGrid8">
-<div class="row">
-<div class="col-1">
-<div id="wb_LayoutGrid3">
-<div id="LayoutGrid3">
-<div class="row">
-<div class="col-1">
-<ul id="SlideShow1" style="display:inline-block;position:relative;width:403px;height:302px;border-radius:0px;z-index:2;">
-<li><img class="image" width="400" height="300" src="images/inicio1.png" alt="" title=""></li>
-<li><img class="image" width="400" height="300" src="images/inicio2.png" style ="display:none;" alt="" title=""></li>
-<li><img class="image" width="400" height="300" src="images/inicio3.png" style ="display:none;" alt="" title=""></li>
-<li><img class="image" width="400" height="300" src="images/inicio4.png" style ="display:none;" alt="" title=""></li>
-<li><img class="image" width="400" height="300" src="images/inicio5.png" style ="display:none;" alt="" title=""></li>
-<li><img class="image" width="400" height="300" src="images/inicio6.png" style ="display:none;" alt="" title=""></li>
-<li><img class="image" width="400" height="300" src="images/inicio7.png" style ="display:none;" alt="" title=""></li>
-<div id="SlideShow1_back" style="position:absolute;left:4px;top:136px;width:30px;height:30px;z-index:999"><a class="slideshow-control" role="button"><img alt="Back" width="30" height="30" src="images/carousel_back.png"></a></div>
-<div id="SlideShow1_next" style="position:absolute;left:369px;top:136px;width:30px;height:30px;z-index:999"><a class="slideshow-control" role="button"><img alt="Next" width="30" height="30" src="images/carousel_next.png"></a></div>
-</ul>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div id="wb_Cuentos">
-<div id="Cuentos">
-<div class="row">
-<div class="col-1">
-<div id="wb_Text5">
-<p>Los relatos cortos son una manera excelente de hacernos reflexionar sobre los aspectos más elementales de la vida. Te presentamos algunos cuentos que muy seguramente te gustarán.</p>
-<p>Leer cuentos y relatos cortos es una de las mejores formas de ejercitar tu intelecto. De cualquier historia puedes obtener una reflexión, y lo haces a través de las ideas contenidas en sus líneas. Para demostrártelo, hemos preparado una selección de mejores cuentos cortos para pensar.</p>
-<p>Los cuentos que hemos elegido no pertenecen a un autor en específico. Algunos son adaptaciones de historias y parábolas conocidas, otros solo siguen la tradición de los pueblos. Te aseguramos, eso sí, que todos los cuentos cortos te harán reflexionar.</p>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div id="wb_LayoutGrid31">
-<div id="LayoutGrid31">
-<div class="row">
-<div class="col-1">
-<div id="wb_LayoutGrid10">
-<div id="LayoutGrid10">
-<div class="row">
-<div class="col-1">
-<div id="wb_Text21">
-<p>Índice</p>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div id="wb_LayoutGrid32">
-<div id="LayoutGrid32">
-<div class="row">
-<div class="col-1">
-<div id="wb_LayoutGrid33">
-<div id="LayoutGrid33">
-<div class="row">
-<div class="col-1">
-<a id="Button1" href="#LayoutGrid4" onmouseover="AnimateCss('Button1', 'transform-pulse', 0, 500);return false;" style="display:inline-block;width:303px;height:40px;z-index:9;">Una libra de mantequilla</a>
-<a id="Button2" href="#LayoutGrid5" onmouseover="AnimateCss('Button2', 'transform-pulse', 0, 500);return false;" style="display:inline-block;width:303px;height:40px;z-index:10;">El anciano del pueblo</a>
-<a id="Button3" href="#LayoutGrid13" onmouseover="AnimateCss('Button3', 'transform-pulse', 0, 500);return false;" style="display:inline-block;width:303px;height:40px;z-index:11;">El sabio de la montaña</a>
-<a id="Button4" href="#LayoutGrid16" onmouseover="AnimateCss('Button4', 'transform-pulse', 0, 500);return false;" style="display:inline-block;width:303px;height:40px;z-index:12;">El peso del vaso</a>
-</div>
-<div class="col-2">
-<a id="Button5" href="#LayoutGrid19" onmouseover="AnimateCss('Button5', 'transform-pulse', 0, 500);return false;" style="display:inline-block;width:354px;height:40px;z-index:13;">El recipiente roto</a>
-<a id="Button6" href="#LayoutGrid22" onmouseover="AnimateCss('Button6', 'transform-pulse', 0, 500);return false;" style="display:inline-block;width:352px;height:40px;z-index:14;">El secreto del éxito</a>
-<a id="Button7" href="#LayoutGrid25" onmouseover="AnimateCss('Button7', 'transform-pulse', 0, 500);return false;" style="display:inline-block;width:347px;height:40px;z-index:15;">La tristeza y la furia</a>
-<a id="Button8" href="#LayoutGrid28" onmouseover="AnimateCss('Button8', 'transform-pulse', 0, 500);return false;" style="display:inline-block;width:382px;height:40px;z-index:16;">El amor es ciego y la locura siempre lo acompaña</a>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div id="wb_LayoutGrid4">
-<div id="LayoutGrid4">
-<div class="row">
-<div class="col-1">
-<div id="wb_LayoutGrid6">
-<div id="LayoutGrid6">
-<div class="row">
-<div class="col-1">
-<div id="wb_Text4">
-<p>Una libra de mantequilla</p>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div id="wb_LayoutGrid11">
-<div id="LayoutGrid11">
-<div class="row">
-<div class="col-1">
-<div id="wb_Image1" style="display:inline-block;width:100%;height:auto;z-index:19;">
-<img src="images/mantequilla.png" id="Image1" alt="" width="940" height="940">
-</div>
-<div id="wb_Text6">
-<p>Hace mucho tiempo vivía un granjero que vendía mantequilla en un pueblo muy pequeño. El panadero era uno de sus clientes más fieles, pero un día empezó a sospechar que la barra de mantequilla pesaba menos que la libra que estaba pagando.</p>
-<br>
-<p>Así, decidió pesarla en su negocio y descubrió que sus temores no eran infundados. Reunió a varios pobladores como testigos y se encaminó a los tribunales para demandar al granjero. Una vez allí, el juez le preguntó al granjero si usaba una medida para vender las libras de mantequilla.</p>
-<br>
-<p>Con una voz segura y con mucho temple el acusado respondió que, al trabajar con instrumentos primitivos, no tenía un mecanismo para pesar su mercancía. Sin embargo, sí tenía un método que usaba como escala. Los testigos, el panadero y el juez inclinaron el cuerpo para escuchar mejor la defensa del granjero:</p>
-<br>
-<p>“Señor juez, mucho antes de que el panadero empezara a comprarme mantequilla yo le he comprado una libra de pan todos los días. Él me lo trae temprano por la mañana, y lo que hago es ponerlo en una balanza y le doy la misma cantidad de mantequilla por el peso que él me da de pan”</p>
-<br>
-<p>Todos reclinaron el cuerpo hacia atrás y miraron de forma despectiva al panadero. Este decidió retirar los cargos y nunca más se quejó al respecto del peso de la mantequilla. Sin duda uno de los mejores cuentos cortos para pensar, uno cuyas enseñanzas puedes aplicar en tu día a día.</p>
-</div>
-<div id="wb_Text22">
-<p><a href="#LayoutGrid31">Índice</a></p>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div id="Layer1" style="position:absolute;overflow:hidden;text-align:center;left:1020px;top:1230px;width:110px;height:60px;z-index:122;">
-<div id="Layer1_Container" style="width:100%">
-<div id="wb_Icon1" style="display:inline-block;width:81px;height:45px;text-align:center;z-index:24;">
-<a href="./index.html"><div id="Icon1"><i class="fa fa-chevron-circle-up"></i></div></a>
-</div>
-</div>
-</div>
-<div id="wb_LayoutGrid5">
-<div id="LayoutGrid5">
-<div class="row">
-<div class="col-1">
-<div id="wb_LayoutGrid9">
-<div id="LayoutGrid9">
-<div class="row">
-<div class="col-1">
-<div id="wb_LayoutGrid12">
-<div id="LayoutGrid12">
-<div class="row">
-<div class="col-1">
-<div id="wb_Text8">
-<p>El anciano del pueblo</p>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div id="wb_Image3" style="display:inline-block;width:100%;height:auto;z-index:36;">
-<img src="images/anciano.png" id="Image3" alt="" width="940" height="940">
-</div>
-<div id="wb_Text7">
-<p>Había una vez un anciano que vivía en un pueblo. Todos los habitantes lo evitaban, ya que tenía la mala fama de estar siempre de mal humor. Los niños temían pasar por el frente de su casa, e incluso los adultos recelaban al desearle los buenos días.</p>
-<br>
-<p>Los habitantes más longevos del pueblo aseguraban que desde siempre mantuvo esta actitud. Su amargura, odio y resentimiento superaba su carácter; ya que su casa, su césped e incluso sus vecinos también asimilaban este tono lúgubre.</p>
-<br>
-<p>Lo cierto es que un buen día, aquel en el que el anciano celebraba nueve décadas de vida, se empezó a esparcir el rumor de que el anciano estaba feliz. De repente su casa ya no se veía oscura, los vecinos habían recuperado su jovialidad y su césped era el más verde de todo el pueblo.</p>
-<br>
-<p>Todos rodearon su casa en espera de lo que había sucedido, a lo que el anciano los recibió con una gran sonrisa y emoción. Uno de los habitantes se atrevió con voz tartamuda preguntar por qué estaba tan feliz. La respuesta del anciano fue: “Nada en especial. He vivido noventa años buscando la felicidad y fue inútil. Hoy decidí dejar de buscarla y amanecí más feliz que en toda mi vida”.</p>
-</div>
-<div id="wb_Text26">
-<p><a href="#LayoutGrid31">Índice</a></p>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div id="wb_LayoutGrid13">
-<div id="LayoutGrid13">
-<div class="row">
-<div class="col-1">
-<div id="wb_LayoutGrid14">
-<div id="LayoutGrid14">
-<div class="row">
-<div class="col-1">
-<div id="wb_LayoutGrid15">
-<div id="LayoutGrid15">
-<div class="row">
-<div class="col-1">
-<div id="wb_Text10">
-<p>El sabio de la montaña</p>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div id="wb_Image2" style="display:inline-block;width:100%;height:auto;z-index:42;">
-<img src="images/el sabio de la montaña.jpg" id="Image2" alt="" width="940" height="705">
-</div>
-<div id="wb_Text9">
-<p>En una montaña vivía un sabio que respondía a todas las preguntas, dudas e inconvenientes que tenían las personas. Miles acudían a él a diario para consultarle acerca de sus problemas. Un día, al percatarse de la dependencia que se estaba creando en torno a sus consejos, decidió reunirlos a todos alrededor de su gruta.</p>
-<br>
-<p>Allí, con miles y miles a su alrededor, les contó una anécdota graciosa que hizo soltar carcajadas a todos los presentes. Al terminarla esperó un minuto en silencio y empezó de nuevo a contar la anécdota. Esta vez solo unos pocos se rieron y muchos asumieron un temple de confusión.</p>
-<br>
-<p>El sabio hizo lo propio una tercera vez, solo que en esta ocasión nadie se rió de la historia. Uno de sus mayores admiradores se acercó y le preguntó cuál era el sentido de la dinámica. A lo que el sabio respondió: “No pueden reírse del mismo chiste una y otra vez, pero sí pueden quejarse y llorar una y otra vez por los mismos problemas. ¿No es acaso paradójico?”.</p>
-<br>
-<p>Todos aquellos que lo rodeaban bajaron la cabeza avergonzados y se retiraron poco a poco de la montaña. Desde entonces, solo recibe un par de consultas al día; todas estas relacionadas con cosas estrictamente importantes.</p>
-</div>
-<div id="wb_Text25">
-<p><a href="#LayoutGrid31">Índice</a></p>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div id="wb_LayoutGrid16">
-<div id="LayoutGrid16">
-<div class="row">
-<div class="col-1">
-<div id="wb_LayoutGrid17">
-<div id="LayoutGrid17">
-<div class="row">
-<div class="col-1">
-<div id="wb_LayoutGrid18">
-<div id="LayoutGrid18">
-<div class="row">
-<div class="col-1">
-<div id="wb_Text12">
-<p>El peso del vaso</p>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div id="wb_Image4" style="display:inline-block;width:100%;height:auto;z-index:54;">
-<img src="images/vaso.png" id="Image4" alt="" width="940" height="940">
-</div>
-<div id="wb_Text11">
-<p>En una clase sobre el manejo del estrés, un profesor no encontraba la manera de que sus estudiantes asimilaran sus enseñanzas. Decidió, justo antes de terminar, coger un vaso de agua, levantarlo al frente de todos y preguntarles con seriedad: “¿Cuánto pesa este vaso?”.</p>
-<br>
-<p>Poco a poco todos empezaron a dar sus conjeturas acerca del peso, hasta que no quedó un solo estudiante presente sin que intentara acertar la respuesta. Cuando llegó este momento, el profesor respondió: “A mi parecer, el peso de este vaso es irrelevante. Todo depende de la cantidad de tiempo que lo sostenga”. El salón permaneció en silencio y el profesor continuó:</p>
-<br>
-<p>“Si lo sostengo durante un minuto me parecerá que es un vaso muy ligero. Si lo hago durante horas mi brazo creerá que pesa varios kilos. Finalmente, si sostengo el vaso durante un día mi brazo se entumecerá y sentiré que pesa varias toneladas”.</p>
-<br>
-<p>Ante la mirada confundida de sus alumnos el profesor expuso: “El peso del vaso no cambia, por supuesto, pero cuanto mayor es el tiempo que decido sostenerlo mayor sentiré que es su peso. Lo mismo sucede con las preocupaciones de la vida: piensa en ellas durante un minuto y te parecerán sencillas. Hazlo durante unas horas y empezarás a preocuparte. Llévalas contigo todo el día y te dejarán paralizado“.</p>
-<br>
-<p>Los estudiantes asintieron con el rostro y el profesor puso el vaso sobre la mesa. </p>
-</div>
-<div id="wb_Text24">
-<p><a href="#LayoutGrid31">Índice</a></p>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div id="wb_LayoutGrid19">
-<div id="LayoutGrid19">
-<div class="row">
-<div class="col-1">
-<div id="wb_LayoutGrid20">
-<div id="LayoutGrid20">
-<div class="row">
-<div class="col-1">
-<div id="wb_LayoutGrid21">
-<div id="LayoutGrid21">
-<div class="row">
-<div class="col-1">
-<div id="wb_Text14">
-<p>El recipiente roto</p>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div id="wb_Image5" style="display:inline-block;width:100%;height:auto;z-index:66;">
-<img src="images/recipiente.png" id="Image5" alt="" width="940" height="578">
-</div>
-<div id="wb_Text13">
-<p>Un anciano granjero de un pueblo de China tenía que hacer una larga caminata para llevar agua del arrollo hasta su granja. Para ello usaba un tronco en su cuello con dos recipientes grandes en sus extremos. Sin embargo, uno de estos tenía una grieta por la que se perdía un poco de agua.</p>
-<br>
-<p>Todos los días el anciano debía hacer varias caminatas de media hora para buscar agua. El recipiente con la grieta, a pesar de llenarlo por completo en el río, llegaba solo con la mitad del agua. Por supuesto, el intacto lo hacía sin perder una sola gota.</p>
-<br>
-<p>Así transcurrió la vida del granjero durante dos años, yendo y viniendo varias veces al día con sus recipientes. Un día, al inclinarse para recoger agua en el arrollo, notó que el recipiente agrietado estaba triste. Con una preocupación genuina interrogó los motivos, a lo cual este respondió:</p>
-<br>
-<p>“Estoy muy avergonzado contigo. Desde hace dos años mi grieta impide cumplir mi función. Te hago trabajar más por menos, así que ya no soy eficiente. Deberías reemplazarme por un recipiente que no filtre agua”. El granjero calló, recogió agua e inició el camino de regreso.</p>
-<br>
-<p>A la mitad del trayecto el anciano respondió: “¿Notas todos estos árboles frutales y flores que crecen a tu lado? Bueno, están ahí gracias a ti. Planté semillas al percatarme de tu grieta y durante dos años has sido tú quien ha hecho que crezcan”. A partir de ese día el recipiente recuperó su confianza y cumplió su labor con solemnidad.</p>
-</div>
-<div id="wb_Text27">
-<p><a href="#LayoutGrid31">Índice</a></p>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div id="wb_LayoutGrid22">
-<div id="LayoutGrid22">
-<div class="row">
-<div class="col-1">
-<div id="wb_LayoutGrid23">
-<div id="LayoutGrid23">
-<div class="row">
-<div class="col-1">
-<div id="wb_LayoutGrid24">
-<div id="LayoutGrid24">
-<div class="row">
-<div class="col-1">
-<div id="wb_Text16">
-<p>El secreto del éxito</p>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div id="wb_Image6" style="display:inline-block;width:100%;height:auto;z-index:78;">
-<img src="images/éxito.jpg" id="Image6" alt="" width="940" height="680">
-</div>
-<div id="wb_Text15">
-<p>Una vez un discípulo le preguntó a su maestro acerca del secreto del éxito. El maestro, luego de reflexionar en silencio, le pidió que lo esperase al amanecer en la orilla del río para darle la respuesta.</p>
-<br>
-<p>Al siguiente, justo antes del amanecer, el discípulo encontró a su maestro en frente de la orilla del río. Sin mediar palabra, salvo un pequeño ademán de que lo siguiera, empezó a adentrarse poco a poco en el río.</p>
-<br>
-<p>El agua empezó a subir de los tobillos a la rodilla, de esta a la cadera y finalmente hasta el pecho. Justo cuando estaba por cubrirle el rostro, su maestro lo tomó y lo hundió con vehemencia bajo el agua. Empezó así una lucha feroz por emerger a la superficie, pero la fuerza de su maestro era tal que se lo impedía.</p>
-<br>
-<p>Finalmente, luego de varios segundos, este dejó que subiera por una bocanada de aire. Lo llevó a la orilla y le preguntó: “¿Qué era lo que más deseabas al estar sumergido”? “¡Respirar!”, contestó el joven discípulo. A lo que este contestó: “Allí tienes el secreto del éxito. Deséalo tanto como deseabas respirar aire el día de hoy. Cuando lo hagas, lo obtendrás”.</p>
-</div>
-<div id="wb_Text23">
-<p><a href="#LayoutGrid31">Índice</a></p>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div id="wb_LayoutGrid25">
-<div id="LayoutGrid25">
-<div class="row">
-<div class="col-1">
-<div id="wb_LayoutGrid26">
-<div id="LayoutGrid26">
-<div class="row">
-<div class="col-1">
-<div id="wb_LayoutGrid27">
-<div id="LayoutGrid27">
-<div class="row">
-<div class="col-1">
-<div id="wb_Text18">
-<p>La tristeza y la furia</p>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div id="wb_Image7" style="display:inline-block;width:100%;height:auto;z-index:90;">
-<img src="images/tristeza-y-furia.jpg" id="Image7" alt="" width="940" height="1075">
-</div>
-<div id="wb_Text17">
-<p>En un reino encantado donde los hombres nunca pueden llegar, o quizás donde los hombres transitan eternamente sin darse cuenta...</p>
-<p>En un reino mágico, donde las cosas no tangibles, se vuelven concretas...</p>
-<p>Había una vez...</p>
-<p>Un estanque maravilloso.</p>
-<p>Era una laguna de agua cristalina y pura donde nadaban peces de todos los colores existentes y donde todas las tonalidades del verde se reflejaban permanentemente...</p>
-<p>Hasta ese estanque mágico y transparente se acercaron a bañarse haciéndose mutua compañía, la tristeza y la furia.</p>
-<p>Las dos se quitaron sus vestimentas y desnudas las dos, entraron al estanque.</p>
-<p>La furia, apurada (como siempre está la furia), urgida - sin saber por qué - se baño rápidamente y más rápidamente aún, salió del agua...</p>
-<p>Pero la furia es ciega, o por lo menos, no distingue claramente la realidad, así que, desnuda y apurada, se puso, al salir, la primera ropa que encontró...</p>
-<p>Y sucedió que esa ropa no era la suya, sino la de la tristeza...</p>
-<p>Y así vestida de tristeza, la furia se fue.</p>
-<p>Muy calma, y muy serena, dispuesta como siempre, a quedarse en el lugar donde está, la tristeza terminó su baño y sin ningún apuro (o mejor dicho sin conciencia del paso del tiempo), con pereza y lentamente, salió del estanque.</p>
-<p>En la orilla se encontró con que su ropa ya no estaba.</p>
-<p>Como todos sabemos, si hay algo que a la tristeza no le gusta es quedar al desnudo, así que se puso la única ropa que había junto al estanque, la ropa de la furia.</p>
-<p>Cuentan que desde entonces, muchas veces uno se encuentra con la furia,&nbsp;ciega, cruel, terrible y enfadada, pero si nos damos el tiempo de mirar bien, encontramos que esta furia que vemos es sólo un disfraz, y que detrás del disfraz de la furia, en realidad... está escondida la tristeza.</p>
-</div>
-<div id="wb_Text28">
-<p><a href="#LayoutGrid31">Índice</a></p>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div id="wb_LayoutGrid28">
-<div id="LayoutGrid28">
-<div class="row">
-<div class="col-1">
-<div id="wb_LayoutGrid29">
-<div id="LayoutGrid29">
-<div class="row">
-<div class="col-1">
-<div id="wb_LayoutGrid30">
-<div id="LayoutGrid30">
-<div class="row">
-<div class="col-1">
-<div id="wb_Text20">
-<p>El amor es ciego y la locura siempre lo acompaña</p>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div id="wb_Image8" style="display:inline-block;width:100%;height:auto;z-index:102;">
-<img src="images/el amor.png" id="Image8" alt="" width="940" height="612">
-</div>
-<div id="wb_Text19">
-<p>Cuentan que una vez se reunieron en un lugar de la tierra todos los sentimientos y cualidades de los hombres.</p>
-<br>
-<p>Cuando el ABURRIMIENTO ya había bostezado por tercera vez, la LOCURA, como siempre tan loca, les propuso: ¿Vamos a jugar a las escondidas? La INTRIGA levantó la ceja intrigada y la CURIOSIDAD, sin poder contenerse preguntó: ¿A las escondidas? ¿Y eso cómo es?</p>
-<br>
-<p>Es un juego —Explicó la LOCURA—, en que yo me tapo la cara y comienzo a contar desde uno hasta un millón mientras ustedes se esconden; y cuando yo haya terminado de contar, el primero de ustedes que yo encuentre ocupará mi lugar para continuar con el juego.</p>
-<br>
-<p>El ENTUSIASMO bailó secundado por la EUFORIA, la ALEGRIA dio tantos saltos que terminó por convencer a la DUDA, e incluso a la APATIA a la que nunca le interesaba nada. Pero no todos quisieron participar. La VERDAD prefirió no esconderse… ¿para qué? Si al final siempre la encontraban. La SOBERBIA opinó que era un juego muy tonto (en el fondo lo que le molestaba era que la idea no hubiese sido de ella) y la COBARDIA prefirió no arriesgarse…</p>
-<br>
-<p>UNO, DOS, TRES… comenzó a contar la LOCURA.</p>
-<br>
-<p>La primera en esconderse fue la PEREZA, que como siempre se dejó caer tras la primera piedra en el camino. La FE subió al cielo y la ENVIDIA se escondió tras la sombra del TRIUNFO, que con su propio esfuerzo había logrado subir a la copa del árbol más alto. La GENEROSIDAD casi no alcanza a esconderse, cada sitio que hallaba le parecía maravilloso para alguno de sus amigos… ¿Un lago cristalino? (Ideal para la BELLEZA). ¿La hendija de un árbol? (Perfecto para la TIMIDEZ). ¿El vuelo de la mariposa? (Lo mejor para la VOLUPTUOSIDAD). ¿Una ráfaga de viento? (Magnífico para la LIBERTAD). Así terminó por ocultarse en un rayito de Sol.</p>
-<br>
-<p>El EGOISMO, en cambio encontró un sitio muy bueno desde el principio, ventilado, cómodo… pero solo para él. La MENTIRA se escondió en el fondo de los océanos (mentira, en realidad se escondió detrás del arco iris) y la PASION y el DESEO en el centro de los volcanes. El OLVIDO… se me olvido donde se escondió… pero eso no es lo importante.</p>
-<br>
-<p>Cuando la LOCURA contaba 999.999, el AMOR aún no había encontrado sitio para esconderse, pues todo se encontraba ocupado… hasta que divisó un rosal y estremecido decidió esconderse entre sus flores. ¡UN MILLON! Contó la LOCURA y comenzó a buscar…</p>
-<br>
-<p>La primera en aparecer fue la PEREZA sólo a tres pasos detrás de una piedra. Después se escuchó a la FE discutiendo con DIOS en el cielo sobre Teología. Y la PASION y el DESEO, se sintieron en el vibrar de los volcanes. En un descuido encontró a la ENVIDIA y claro, así pudo deducir donde estaba el TRIUNFO. Al EGOISMO no tuvo ni que buscarlo. El solo salió disparado de su escondite que había resultado ser un nido de avispas.</p>
-<br>
-<p>De tanto caminar LA LOCURA sintió sed y al acercarse al lago descubrió a la BELLEZA, y con la DUDA resultó más fácil todavía, pues la encontró sentada sobre una cerca sin decidir aún de que lado esconderse. Así fue encontrando a todos, al TALENTO entre la hierba fresca; la ANGUSTIA en una oscura cueva, a la MENTIRA detrás del arco iris (mentira, si ella estaba en el fondo del océano) y hasta al OLVIDO… que ya se le había olvidado que estaba jugando a los escondidos… Pero solo el AMOR, no aparecía por ningún sitio…</p>
-<br>
-<p>La LOCURA buscó detrás de cada árbol, bajo cada arroyo del planeta, en las cimas de las montañas y cuando estaba por darse por vencida divisó un rosal y las rosas… Tomó una horquilla y comenzó a mover las ramas hasta que un doloroso grito se escuchó… Las espinas habían herido en los ojos al AMOR… la LOCURA no sabía que hacer para disculparse, lloró, rogó, imploró, pidió perdón y hasta prometió ser su lazarillo…</p>
-<br>
-<p>Desde entonces… desde la primera vez que se jugó a las escondidas en la TIERRA… EL AMOR ES CIEGO Y LA LOCURA SIEMPRE LO ACOMPAÑA</p>
-<br>
-</div>
-<div id="wb_Text29">
-<p><a href="#LayoutGrid31">Índice</a></p>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div id="wb_LayoutGrid7">
-<div id="LayoutGrid7-divider-bottom">
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 230" preserveAspectRatio="none">
+        <div id="LayoutGrid2">
+            <div class="col-1">
+                <div id="wb_Text1">
+                    <p>CUENTOS </p>
+                </div>
+            </div>
+            <div class="col-2">
+                <div id="wb_Text2">
+                    <p>PARA PENSAR</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="wb_LayoutGrid8">
+        <div id="LayoutGrid8">
+            <div class="row">
+                <div class="col-1">
+                    <div id="wb_LayoutGrid3">
+                        <div id="LayoutGrid3">
+                            <div class="row">
+                                <div class="col-1">
+                                    <ul id="SlideShow1" style="display:inline-block;position:relative;width:403px;height:302px;border-radius:0px;z-index:2;">
+                                        <li><img class="image" width="400" height="300" src="images/inicio1.png" alt="" title=""></li>
+                                        <li><img class="image" width="400" height="300" src="images/inicio2.png" style="display:none;" alt="" title=""></li>
+                                        <li><img class="image" width="400" height="300" src="images/inicio3.png" style="display:none;" alt="" title=""></li>
+                                        <li><img class="image" width="400" height="300" src="images/inicio4.png" style="display:none;" alt="" title=""></li>
+                                        <li><img class="image" width="400" height="300" src="images/inicio5.png" style="display:none;" alt="" title=""></li>
+                                        <li><img class="image" width="400" height="300" src="images/inicio6.png" style="display:none;" alt="" title=""></li>
+                                        <li><img class="image" width="400" height="300" src="images/inicio7.png" style="display:none;" alt="" title=""></li>
+                                        <div id="SlideShow1_back" style="position:absolute;left:4px;top:136px;width:30px;height:30px;z-index:999">
+                                            <a class="slideshow-control" role="button"><img alt="Back" width="30" height="30" src="images/carousel_back.png"></a>
+                                        </div>
+                                        <div id="SlideShow1_next" style="position:absolute;left:369px;top:136px;width:30px;height:30px;z-index:999">
+                                            <a class="slideshow-control" role="button"><img alt="Next" width="30" height="30" src="images/carousel_next.png"></a>
+                                        </div>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="wb_Cuentos">
+        <div id="Cuentos">
+            <div class="row">
+                <div class="col-1">
+                    <div id="wb_Text5">
+                        <p>Los relatos cortos son una manera excelente de hacernos reflexionar sobre los aspectos más elementales de la vida. Te presentamos algunos cuentos que muy seguramente te gustarán.</p>
+                        <p>Leer cuentos y relatos cortos es una de las mejores formas de ejercitar tu intelecto. De cualquier historia puedes obtener una reflexión, y lo haces a través de las ideas contenidas en sus líneas. Para demostrártelo, hemos preparado
+                            una selección de mejores cuentos cortos para pensar.</p>
+                        <p>Los cuentos que hemos elegido no pertenecen a un autor en específico. Algunos son adaptaciones de historias y parábolas conocidas, otros solo siguen la tradición de los pueblos. Te aseguramos, eso sí, que todos los cuentos cortos
+                            te harán reflexionar.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="wb_LayoutGrid31">
+        <div id="LayoutGrid31">
+            <div class="row">
+                <div class="col-1">
+                    <div id="wb_LayoutGrid10">
+                        <div id="LayoutGrid10">
+                            <div class="row">
+                                <div class="col-1">
+                                    <div id="wb_Text21">
+                                        <p>Índice</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="wb_LayoutGrid32">
+        <div id="LayoutGrid32">
+            <div class="row">
+                <div class="col-1">
+                    <div id="wb_LayoutGrid33">
+                        <div id="LayoutGrid33">
+                            <div class="row">
+                                <div class="col-1">
+                                    <a id="Button1" href="#LayoutGrid4" onmouseover="AnimateCss('Button1', 'transform-pulse', 0, 500);return false;" style="display:inline-block;width:303px;height:40px;z-index:9;">Una libra de mantequilla</a>
+                                    <a id="Button2" href="#LayoutGrid5" onmouseover="AnimateCss('Button2', 'transform-pulse', 0, 500);return false;" style="display:inline-block;width:303px;height:40px;z-index:10;">El anciano del pueblo</a>
+                                    <a id="Button3" href="#LayoutGrid13" onmouseover="AnimateCss('Button3', 'transform-pulse', 0, 500);return false;" style="display:inline-block;width:303px;height:40px;z-index:11;">El sabio de la montaña</a>
+                                    <a id="Button4" href="#LayoutGrid16" onmouseover="AnimateCss('Button4', 'transform-pulse', 0, 500);return false;" style="display:inline-block;width:303px;height:40px;z-index:12;">El peso del vaso</a>
+                                </div>
+                                <div class="col-2">
+                                    <a id="Button5" href="#LayoutGrid19" onmouseover="AnimateCss('Button5', 'transform-pulse', 0, 500);return false;" style="display:inline-block;width:354px;height:40px;z-index:13;">El recipiente roto</a>
+                                    <a id="Button6" href="#LayoutGrid22" onmouseover="AnimateCss('Button6', 'transform-pulse', 0, 500);return false;" style="display:inline-block;width:352px;height:40px;z-index:14;">El secreto del éxito</a>
+                                    <a id="Button7" href="#LayoutGrid25" onmouseover="AnimateCss('Button7', 'transform-pulse', 0, 500);return false;" style="display:inline-block;width:347px;height:40px;z-index:15;">La tristeza y la furia</a>
+                                    <a id="Button8" href="#LayoutGrid28" onmouseover="AnimateCss('Button8', 'transform-pulse', 0, 500);return false;" style="display:inline-block;width:382px;height:40px;z-index:16;">El amor es ciego y la locura siempre lo acompaña</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="wb_LayoutGrid4">
+        <div id="LayoutGrid4">
+            <div class="row">
+                <div class="col-1">
+                    <div id="wb_LayoutGrid6">
+                        <div id="LayoutGrid6">
+                            <div class="row">
+                                <div class="col-1">
+                                    <div id="wb_Text4">
+                                        <p>Una libra de mantequilla</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="wb_LayoutGrid11">
+                        <div id="LayoutGrid11">
+                            <div class="row">
+                                <div class="col-1">
+                                    <div id="wb_Image1" style="display:inline-block;width:100%;height:auto;z-index:19;">
+                                        <img src="images/mantequilla.png" id="Image1" alt="" width="940" height="940">
+                                    </div>
+                                    <div id="wb_Text6">
+                                        <p>Hace mucho tiempo vivía un granjero que vendía mantequilla en un pueblo muy pequeño. El panadero era uno de sus clientes más fieles, pero un día empezó a sospechar que la barra de mantequilla pesaba menos que la
+                                            libra que estaba pagando.</p>
+                                        <br>
+                                        <p>Así, decidió pesarla en su negocio y descubrió que sus temores no eran infundados. Reunió a varios pobladores como testigos y se encaminó a los tribunales para demandar al granjero. Una vez allí, el juez le preguntó
+                                            al granjero si usaba una medida para vender las libras de mantequilla.</p>
+                                        <br>
+                                        <p>Con una voz segura y con mucho temple el acusado respondió que, al trabajar con instrumentos primitivos, no tenía un mecanismo para pesar su mercancía. Sin embargo, sí tenía un método que usaba como escala. Los
+                                            testigos, el panadero y el juez inclinaron el cuerpo para escuchar mejor la defensa del granjero:</p>
+                                        <br>
+                                        <p>“Señor juez, mucho antes de que el panadero empezara a comprarme mantequilla yo le he comprado una libra de pan todos los días. Él me lo trae temprano por la mañana, y lo que hago es ponerlo en una balanza y le
+                                            doy la misma cantidad de mantequilla por el peso que él me da de pan”</p>
+                                        <br>
+                                        <p>Todos reclinaron el cuerpo hacia atrás y miraron de forma despectiva al panadero. Este decidió retirar los cargos y nunca más se quejó al respecto del peso de la mantequilla. Sin duda uno de los mejores cuentos
+                                            cortos para pensar, uno cuyas enseñanzas puedes aplicar en tu día a día.</p>
+                                    </div>
+                                    <div id="wb_Text22">
+                                        <p><a href="#LayoutGrid31">Índice</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="Layer1" style="position:absolute;overflow:hidden;text-align:center;left:1020px;top:1230px;width:110px;height:60px;z-index:122;">
+        <div id="Layer1_Container" style="width:100%">
+            <div id="wb_Icon1" style="display:inline-block;width:81px;height:45px;text-align:center;z-index:24;">
+                <a href="./index.html">
+                    <div id="Icon1"><i class="fa fa-chevron-circle-up"></i></div>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div id="wb_LayoutGrid5">
+        <div id="LayoutGrid5">
+            <div class="row">
+                <div class="col-1">
+                    <div id="wb_LayoutGrid9">
+                        <div id="LayoutGrid9">
+                            <div class="row">
+                                <div class="col-1">
+                                    <div id="wb_LayoutGrid12">
+                                        <div id="LayoutGrid12">
+                                            <div class="row">
+                                                <div class="col-1">
+                                                    <div id="wb_Text8">
+                                                        <p>El anciano del pueblo</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div id="wb_Image3" style="display:inline-block;width:100%;height:auto;z-index:36;">
+                                        <img src="images/anciano.png" id="Image3" alt="" width="940" height="940">
+                                    </div>
+                                    <div id="wb_Text7">
+                                        <p>Había una vez un anciano que vivía en un pueblo. Todos los habitantes lo evitaban, ya que tenía la mala fama de estar siempre de mal humor. Los niños temían pasar por el frente de su casa, e incluso los adultos
+                                            recelaban al desearle los buenos días.</p>
+                                        <br>
+                                        <p>Los habitantes más longevos del pueblo aseguraban que desde siempre mantuvo esta actitud. Su amargura, odio y resentimiento superaba su carácter; ya que su casa, su césped e incluso sus vecinos también asimilaban
+                                            este tono lúgubre.</p>
+                                        <br>
+                                        <p>Lo cierto es que un buen día, aquel en el que el anciano celebraba nueve décadas de vida, se empezó a esparcir el rumor de que el anciano estaba feliz. De repente su casa ya no se veía oscura, los vecinos habían
+                                            recuperado su jovialidad y su césped era el más verde de todo el pueblo.</p>
+                                        <br>
+                                        <p>Todos rodearon su casa en espera de lo que había sucedido, a lo que el anciano los recibió con una gran sonrisa y emoción. Uno de los habitantes se atrevió con voz tartamuda preguntar por qué estaba tan feliz. La
+                                            respuesta del anciano fue: “Nada en especial. He vivido noventa años buscando la felicidad y fue inútil. Hoy decidí dejar de buscarla y amanecí más feliz que en toda mi vida”.</p>
+                                    </div>
+                                    <div id="wb_Text26">
+                                        <p><a href="#LayoutGrid31">Índice</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="wb_LayoutGrid13">
+        <div id="LayoutGrid13">
+            <div class="row">
+                <div class="col-1">
+                    <div id="wb_LayoutGrid14">
+                        <div id="LayoutGrid14">
+                            <div class="row">
+                                <div class="col-1">
+                                    <div id="wb_LayoutGrid15">
+                                        <div id="LayoutGrid15">
+                                            <div class="row">
+                                                <div class="col-1">
+                                                    <div id="wb_Text10">
+                                                        <p>El sabio de la montaña</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div id="wb_Image2" style="display:inline-block;width:100%;height:auto;z-index:42;">
+                                        <img src="images/el sabio de la montaña.jpg" id="Image2" alt="" width="940" height="705">
+                                    </div>
+                                    <div id="wb_Text9">
+                                        <p>En una montaña vivía un sabio que respondía a todas las preguntas, dudas e inconvenientes que tenían las personas. Miles acudían a él a diario para consultarle acerca de sus problemas. Un día, al percatarse de la
+                                            dependencia que se estaba creando en torno a sus consejos, decidió reunirlos a todos alrededor de su gruta.</p>
+                                        <br>
+                                        <p>Allí, con miles y miles a su alrededor, les contó una anécdota graciosa que hizo soltar carcajadas a todos los presentes. Al terminarla esperó un minuto en silencio y empezó de nuevo a contar la anécdota. Esta vez
+                                            solo unos pocos se rieron y muchos asumieron un temple de confusión.</p>
+                                        <br>
+                                        <p>El sabio hizo lo propio una tercera vez, solo que en esta ocasión nadie se rió de la historia. Uno de sus mayores admiradores se acercó y le preguntó cuál era el sentido de la dinámica. A lo que el sabio respondió:
+                                            “No pueden reírse del mismo chiste una y otra vez, pero sí pueden quejarse y llorar una y otra vez por los mismos problemas. ¿No es acaso paradójico?”.</p>
+                                        <br>
+                                        <p>Todos aquellos que lo rodeaban bajaron la cabeza avergonzados y se retiraron poco a poco de la montaña. Desde entonces, solo recibe un par de consultas al día; todas estas relacionadas con cosas estrictamente importantes.</p>
+                                    </div>
+                                    <div id="wb_Text25">
+                                        <p><a href="#LayoutGrid31">Índice</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="wb_LayoutGrid16">
+        <div id="LayoutGrid16">
+            <div class="row">
+                <div class="col-1">
+                    <div id="wb_LayoutGrid17">
+                        <div id="LayoutGrid17">
+                            <div class="row">
+                                <div class="col-1">
+                                    <div id="wb_LayoutGrid18">
+                                        <div id="LayoutGrid18">
+                                            <div class="row">
+                                                <div class="col-1">
+                                                    <div id="wb_Text12">
+                                                        <p>El peso del vaso</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div id="wb_Image4" style="display:inline-block;width:100%;height:auto;z-index:54;">
+                                        <img src="images/vaso.png" id="Image4" alt="" width="940" height="940">
+                                    </div>
+                                    <div id="wb_Text11">
+                                        <p>En una clase sobre el manejo del estrés, un profesor no encontraba la manera de que sus estudiantes asimilaran sus enseñanzas. Decidió, justo antes de terminar, coger un vaso de agua, levantarlo al frente de todos
+                                            y preguntarles con seriedad: “¿Cuánto pesa este vaso?”.</p>
+                                        <br>
+                                        <p>Poco a poco todos empezaron a dar sus conjeturas acerca del peso, hasta que no quedó un solo estudiante presente sin que intentara acertar la respuesta. Cuando llegó este momento, el profesor respondió: “A mi parecer,
+                                            el peso de este vaso es irrelevante. Todo depende de la cantidad de tiempo que lo sostenga”. El salón permaneció en silencio y el profesor continuó:</p>
+                                        <br>
+                                        <p>“Si lo sostengo durante un minuto me parecerá que es un vaso muy ligero. Si lo hago durante horas mi brazo creerá que pesa varios kilos. Finalmente, si sostengo el vaso durante un día mi brazo se entumecerá y sentiré
+                                            que pesa varias toneladas”.</p>
+                                        <br>
+                                        <p>Ante la mirada confundida de sus alumnos el profesor expuso: “El peso del vaso no cambia, por supuesto, pero cuanto mayor es el tiempo que decido sostenerlo mayor sentiré que es su peso. Lo mismo sucede con las
+                                            preocupaciones de la vida: piensa en ellas durante un minuto y te parecerán sencillas. Hazlo durante unas horas y empezarás a preocuparte. Llévalas contigo todo el día y te dejarán paralizado“.</p>
+                                        <br>
+                                        <p>Los estudiantes asintieron con el rostro y el profesor puso el vaso sobre la mesa. </p>
+                                    </div>
+                                    <div id="wb_Text24">
+                                        <p><a href="#LayoutGrid31">Índice</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="wb_LayoutGrid19">
+        <div id="LayoutGrid19">
+            <div class="row">
+                <div class="col-1">
+                    <div id="wb_LayoutGrid20">
+                        <div id="LayoutGrid20">
+                            <div class="row">
+                                <div class="col-1">
+                                    <div id="wb_LayoutGrid21">
+                                        <div id="LayoutGrid21">
+                                            <div class="row">
+                                                <div class="col-1">
+                                                    <div id="wb_Text14">
+                                                        <p>El recipiente roto</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div id="wb_Image5" style="display:inline-block;width:100%;height:auto;z-index:66;">
+                                        <img src="images/recipiente.png" id="Image5" alt="" width="940" height="578">
+                                    </div>
+                                    <div id="wb_Text13">
+                                        <p>Un anciano granjero de un pueblo de China tenía que hacer una larga caminata para llevar agua del arrollo hasta su granja. Para ello usaba un tronco en su cuello con dos recipientes grandes en sus extremos. Sin
+                                            embargo, uno de estos tenía una grieta por la que se perdía un poco de agua.</p>
+                                        <br>
+                                        <p>Todos los días el anciano debía hacer varias caminatas de media hora para buscar agua. El recipiente con la grieta, a pesar de llenarlo por completo en el río, llegaba solo con la mitad del agua. Por supuesto, el
+                                            intacto lo hacía sin perder una sola gota.</p>
+                                        <br>
+                                        <p>Así transcurrió la vida del granjero durante dos años, yendo y viniendo varias veces al día con sus recipientes. Un día, al inclinarse para recoger agua en el arrollo, notó que el recipiente agrietado estaba triste.
+                                            Con una preocupación genuina interrogó los motivos, a lo cual este respondió:</p>
+                                        <br>
+                                        <p>“Estoy muy avergonzado contigo. Desde hace dos años mi grieta impide cumplir mi función. Te hago trabajar más por menos, así que ya no soy eficiente. Deberías reemplazarme por un recipiente que no filtre agua”.
+                                            El granjero calló, recogió agua e inició el camino de regreso.</p>
+                                        <br>
+                                        <p>A la mitad del trayecto el anciano respondió: “¿Notas todos estos árboles frutales y flores que crecen a tu lado? Bueno, están ahí gracias a ti. Planté semillas al percatarme de tu grieta y durante dos años has
+                                            sido tú quien ha hecho que crezcan”. A partir de ese día el recipiente recuperó su confianza y cumplió su labor con solemnidad.</p>
+                                    </div>
+                                    <div id="wb_Text27">
+                                        <p><a href="#LayoutGrid31">Índice</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="wb_LayoutGrid22">
+        <div id="LayoutGrid22">
+            <div class="row">
+                <div class="col-1">
+                    <div id="wb_LayoutGrid23">
+                        <div id="LayoutGrid23">
+                            <div class="row">
+                                <div class="col-1">
+                                    <div id="wb_LayoutGrid24">
+                                        <div id="LayoutGrid24">
+                                            <div class="row">
+                                                <div class="col-1">
+                                                    <div id="wb_Text16">
+                                                        <p>El secreto del éxito</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div id="wb_Image6" style="display:inline-block;width:100%;height:auto;z-index:78;">
+                                        <img src="images/éxito.jpg" id="Image6" alt="" width="940" height="680">
+                                    </div>
+                                    <div id="wb_Text15">
+                                        <p>Una vez un discípulo le preguntó a su maestro acerca del secreto del éxito. El maestro, luego de reflexionar en silencio, le pidió que lo esperase al amanecer en la orilla del río para darle la respuesta.</p>
+                                        <br>
+                                        <p>Al siguiente, justo antes del amanecer, el discípulo encontró a su maestro en frente de la orilla del río. Sin mediar palabra, salvo un pequeño ademán de que lo siguiera, empezó a adentrarse poco a poco en el río.</p>
+                                        <br>
+                                        <p>El agua empezó a subir de los tobillos a la rodilla, de esta a la cadera y finalmente hasta el pecho. Justo cuando estaba por cubrirle el rostro, su maestro lo tomó y lo hundió con vehemencia bajo el agua. Empezó
+                                            así una lucha feroz por emerger a la superficie, pero la fuerza de su maestro era tal que se lo impedía.</p>
+                                        <br>
+                                        <p>Finalmente, luego de varios segundos, este dejó que subiera por una bocanada de aire. Lo llevó a la orilla y le preguntó: “¿Qué era lo que más deseabas al estar sumergido”? “¡Respirar!”, contestó el joven discípulo.
+                                            A lo que este contestó: “Allí tienes el secreto del éxito. Deséalo tanto como deseabas respirar aire el día de hoy. Cuando lo hagas, lo obtendrás”.</p>
+                                    </div>
+                                    <div id="wb_Text23">
+                                        <p><a href="#LayoutGrid31">Índice</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="wb_LayoutGrid25">
+        <div id="LayoutGrid25">
+            <div class="row">
+                <div class="col-1">
+                    <div id="wb_LayoutGrid26">
+                        <div id="LayoutGrid26">
+                            <div class="row">
+                                <div class="col-1">
+                                    <div id="wb_LayoutGrid27">
+                                        <div id="LayoutGrid27">
+                                            <div class="row">
+                                                <div class="col-1">
+                                                    <div id="wb_Text18">
+                                                        <p>La tristeza y la furia</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div id="wb_Image7" style="display:inline-block;width:100%;height:auto;z-index:90;">
+                                        <img src="images/tristeza-y-furia.jpg" id="Image7" alt="" width="940" height="1075">
+                                    </div>
+                                    <div id="wb_Text17">
+                                        <p>En un reino encantado donde los hombres nunca pueden llegar, o quizás donde los hombres transitan eternamente sin darse cuenta...</p>
+                                        <p>En un reino mágico, donde las cosas no tangibles, se vuelven concretas...</p>
+                                        <p>Había una vez...</p>
+                                        <p>Un estanque maravilloso.</p>
+                                        <p>Era una laguna de agua cristalina y pura donde nadaban peces de todos los colores existentes y donde todas las tonalidades del verde se reflejaban permanentemente...</p>
+                                        <p>Hasta ese estanque mágico y transparente se acercaron a bañarse haciéndose mutua compañía, la tristeza y la furia.</p>
+                                        <p>Las dos se quitaron sus vestimentas y desnudas las dos, entraron al estanque.</p>
+                                        <p>La furia, apurada (como siempre está la furia), urgida - sin saber por qué - se baño rápidamente y más rápidamente aún, salió del agua...</p>
+                                        <p>Pero la furia es ciega, o por lo menos, no distingue claramente la realidad, así que, desnuda y apurada, se puso, al salir, la primera ropa que encontró...</p>
+                                        <p>Y sucedió que esa ropa no era la suya, sino la de la tristeza...</p>
+                                        <p>Y así vestida de tristeza, la furia se fue.</p>
+                                        <p>Muy calma, y muy serena, dispuesta como siempre, a quedarse en el lugar donde está, la tristeza terminó su baño y sin ningún apuro (o mejor dicho sin conciencia del paso del tiempo), con pereza y lentamente, salió
+                                            del estanque.</p>
+                                        <p>En la orilla se encontró con que su ropa ya no estaba.</p>
+                                        <p>Como todos sabemos, si hay algo que a la tristeza no le gusta es quedar al desnudo, así que se puso la única ropa que había junto al estanque, la ropa de la furia.</p>
+                                        <p>Cuentan que desde entonces, muchas veces uno se encuentra con la furia,&nbsp;ciega, cruel, terrible y enfadada, pero si nos damos el tiempo de mirar bien, encontramos que esta furia que vemos es sólo un disfraz,
+                                            y que detrás del disfraz de la furia, en realidad... está escondida la tristeza.</p>
+                                    </div>
+                                    <div id="wb_Text28">
+                                        <p><a href="#LayoutGrid31">Índice</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="wb_LayoutGrid28">
+        <div id="LayoutGrid28">
+            <div class="row">
+                <div class="col-1">
+                    <div id="wb_LayoutGrid29">
+                        <div id="LayoutGrid29">
+                            <div class="row">
+                                <div class="col-1">
+                                    <div id="wb_LayoutGrid30">
+                                        <div id="LayoutGrid30">
+                                            <div class="row">
+                                                <div class="col-1">
+                                                    <div id="wb_Text20">
+                                                        <p>El amor es ciego y la locura siempre lo acompaña</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div id="wb_Image8" style="display:inline-block;width:100%;height:auto;z-index:102;">
+                                        <img src="images/el amor.png" id="Image8" alt="" width="940" height="612">
+                                    </div>
+                                    <div id="wb_Text19">
+                                        <p>Cuentan que una vez se reunieron en un lugar de la tierra todos los sentimientos y cualidades de los hombres.</p>
+                                        <br>
+                                        <p>Cuando el ABURRIMIENTO ya había bostezado por tercera vez, la LOCURA, como siempre tan loca, les propuso: ¿Vamos a jugar a las escondidas? La INTRIGA levantó la ceja intrigada y la CURIOSIDAD, sin poder contenerse
+                                            preguntó: ¿A las escondidas? ¿Y eso cómo es?</p>
+                                        <br>
+                                        <p>Es un juego —Explicó la LOCURA—, en que yo me tapo la cara y comienzo a contar desde uno hasta un millón mientras ustedes se esconden; y cuando yo haya terminado de contar, el primero de ustedes que yo encuentre
+                                            ocupará mi lugar para continuar con el juego.</p>
+                                        <br>
+                                        <p>El ENTUSIASMO bailó secundado por la EUFORIA, la ALEGRIA dio tantos saltos que terminó por convencer a la DUDA, e incluso a la APATIA a la que nunca le interesaba nada. Pero no todos quisieron participar. La VERDAD
+                                            prefirió no esconderse… ¿para qué? Si al final siempre la encontraban. La SOBERBIA opinó que era un juego muy tonto (en el fondo lo que le molestaba era que la idea no hubiese sido de ella) y la COBARDIA prefirió
+                                            no arriesgarse…</p>
+                                        <br>
+                                        <p>UNO, DOS, TRES… comenzó a contar la LOCURA.</p>
+                                        <br>
+                                        <p>La primera en esconderse fue la PEREZA, que como siempre se dejó caer tras la primera piedra en el camino. La FE subió al cielo y la ENVIDIA se escondió tras la sombra del TRIUNFO, que con su propio esfuerzo había
+                                            logrado subir a la copa del árbol más alto. La GENEROSIDAD casi no alcanza a esconderse, cada sitio que hallaba le parecía maravilloso para alguno de sus amigos… ¿Un lago cristalino? (Ideal para la BELLEZA).
+                                            ¿La hendija de un árbol? (Perfecto para la TIMIDEZ). ¿El vuelo de la mariposa? (Lo mejor para la VOLUPTUOSIDAD). ¿Una ráfaga de viento? (Magnífico para la LIBERTAD). Así terminó por ocultarse en un rayito de
+                                            Sol.
+                                        </p>
+                                        <br>
+                                        <p>El EGOISMO, en cambio encontró un sitio muy bueno desde el principio, ventilado, cómodo… pero solo para él. La MENTIRA se escondió en el fondo de los océanos (mentira, en realidad se escondió detrás del arco iris)
+                                            y la PASION y el DESEO en el centro de los volcanes. El OLVIDO… se me olvido donde se escondió… pero eso no es lo importante.</p>
+                                        <br>
+                                        <p>Cuando la LOCURA contaba 999.999, el AMOR aún no había encontrado sitio para esconderse, pues todo se encontraba ocupado… hasta que divisó un rosal y estremecido decidió esconderse entre sus flores. ¡UN MILLON!
+                                            Contó la LOCURA y comenzó a buscar…</p>
+                                        <br>
+                                        <p>La primera en aparecer fue la PEREZA sólo a tres pasos detrás de una piedra. Después se escuchó a la FE discutiendo con DIOS en el cielo sobre Teología. Y la PASION y el DESEO, se sintieron en el vibrar de los volcanes.
+                                            En un descuido encontró a la ENVIDIA y claro, así pudo deducir donde estaba el TRIUNFO. Al EGOISMO no tuvo ni que buscarlo. El solo salió disparado de su escondite que había resultado ser un nido de avispas.</p>
+                                        <br>
+                                        <p>De tanto caminar LA LOCURA sintió sed y al acercarse al lago descubrió a la BELLEZA, y con la DUDA resultó más fácil todavía, pues la encontró sentada sobre una cerca sin decidir aún de que lado esconderse. Así
+                                            fue encontrando a todos, al TALENTO entre la hierba fresca; la ANGUSTIA en una oscura cueva, a la MENTIRA detrás del arco iris (mentira, si ella estaba en el fondo del océano) y hasta al OLVIDO… que ya se le
+                                            había olvidado que estaba jugando a los escondidos… Pero solo el AMOR, no aparecía por ningún sitio…</p>
+                                        <br>
+                                        <p>La LOCURA buscó detrás de cada árbol, bajo cada arroyo del planeta, en las cimas de las montañas y cuando estaba por darse por vencida divisó un rosal y las rosas… Tomó una horquilla y comenzó a mover las ramas
+                                            hasta que un doloroso grito se escuchó… Las espinas habían herido en los ojos al AMOR… la LOCURA no sabía que hacer para disculparse, lloró, rogó, imploró, pidió perdón y hasta prometió ser su lazarillo…</p>
+                                        <br>
+                                        <p>Desde entonces… desde la primera vez que se jugó a las escondidas en la TIERRA… EL AMOR ES CIEGO Y LA LOCURA SIEMPRE LO ACOMPAÑA</p>
+                                        <br>
+                                    </div>
+                                    <div id="wb_Text29">
+                                        <p><a href="#LayoutGrid31">Índice</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="wb_LayoutGrid7">
+        <div id="LayoutGrid7-divider-bottom">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 230" preserveAspectRatio="none">
 <path class="divider-fill" style="opacity:0.3" d="M 505.29,47.51947 C 346.07,47.51947 235.61,230.3 0,230.3 V 0.3 h 508 z" />
 <path class="divider-fill" style="opacity:0.4" d="M 485.29,47.44 C 326.07,47.44 235.61,214.36 0,214.36 V 0.2 h 485.29 z" />
 <path class="divider-fill" style="opacity:0.5" d="m 485.29,48.46999 q -9.42,-0.31 -20,-0.32 c -159.22,0 -229.68,151 -465.29,151 v -198.24 h 485.29 z" />
 <path class="divider-fill" d="M 0,182 V -0.27 H 1000 V 24.4 C 787.4,24.4 781,99.85 702.92,99.85 645,99.85 632.92,46.97 445.29,46.97 286.07,46.97 235.61,182 0,182 Z" />
 </svg></div>
-<div id="LayoutGrid7">
-<div class="row">
-<div class="col-1">
-<div id="wb_Text3">
-<p>2023 - Diseñado por: Edwin</p>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div id="wb_LayoutGrid1">
-<div id="LayoutGrid1">
-<div class="row">
-<div class="col-1">
-</div>
-</div>
-</div>
-</div>
+        <div id="LayoutGrid7">
+            <div class="row">
+                <div class="col-1">
+                    <div id="wb_Text3">
+                        <p>2023 - Diseñado por: Edwin</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="wb_LayoutGrid1">
+        <div id="LayoutGrid1">
+            <div class="row">
+                <div class="col-1">
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
+
 </html>
